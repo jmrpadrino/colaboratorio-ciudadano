@@ -1,0 +1,129 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+nav.navigation {
+	background: #F0F5F9;
+}
+nav ul a {
+	color: black;
+}
+nav .sidenav-trigger {
+	position: absolute;
+	top: 0;
+	color: black;
+}
+footer { color: white; }
+.bkg-blue {
+	background: #66A5F4;
+}
+.nomargin-bottom {
+	margin-bottom: 0;
+}
+.main-nav-container-centered {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+@media only screen and ( max-width: 1024px ) {
+	.brand-logo img { max-width: 160px ; }
+}
+
+.hero.home {
+	background: #3FB2A5;
+	color: white;
+}
+.hero.home h1 { font-size: 24px;}
+.hero-max-width-image {
+	max-width: 90% !important;
+	margin: 0 auto;
+	margin-top: 36px;
+	display: block;
+}
+.featured-projects .col {
+	margin-top: 36px;
+	margin-bottom: 36px;
+}
+.featured-projects .col:nth-child(even) {
+	border-left: 1px solid rgba(102, 165, 244, 0.5);
+	border-right: 1px solid rgba(102, 165, 244, 0.5);
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.section-title {
+	font-size: 36px;
+	color: #66A5F4;
+	text-transform: uppercase;
+}
+.row.feed { 
+	margin-bottom: 36px; 
+}
+.project-card {
+	color: #66A5F4;
+	padding: 0 5px;
+}
+.project-image-placeholder {
+	padding: 36px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;	 
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	max-height: 200px;
+}
+.project-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+.btn-center {
+	margin: 0 auto;
+	display: block;
+}
+.btn-rounded {
+	border-radius: 20px;
+}
+.btn-squared {
+	border-radius: 0;
+}
+.btn-colaborate {
+	width: 160px;
+	background: #66A5F4;
+}
+.btn-more-projects {
+	width: 220px;
+	background: #EF8F81;
+}
+.stats-list li {
+	padding: 5px 8px;
+	background: #3FB2A5;
+	color: white;
+	margin: 18px 0;
+	font-size: 14px;
+}
+.flex-horizontal-items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+footer a {
+	color: white;
+}
+.footer-social-icons {
+	font-size: 24px;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.footer-social-icons li {
+	margin-right: 20px;
+}
