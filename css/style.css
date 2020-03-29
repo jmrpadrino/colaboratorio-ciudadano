@@ -13,6 +13,10 @@ nav .sidenav-trigger {
 	color: black;
 }
 footer { color: white; }
+strong { font-weight: bold; }
+.btn {
+	text-transform:inherit;
+}
 .bkg-blue {
 	background: #66A5F4;
 }
@@ -111,6 +115,12 @@ footer { color: white; }
 }
 .btn-red {
 	background: #EF8F81;
+	color: white !important;
+}
+.btn-red:hover {
+	background: white;
+	color: #EF8F81 !important;
+	border: 1px solid #EF8F81; 
 }
 .btn-green {
 	background: #3FB2A5;
@@ -133,6 +143,16 @@ footer { color: white; }
 .item-space-around {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
+}
+.item-flex-start {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.display-inline-flex {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
 }
 footer a {
 	color: white;
@@ -178,4 +198,35 @@ thead th {
 }
 .table-campaigns-green a { 
 	color: #3FB2A5;
+}
+/* Comments */
+.table-campaigns-red,
+.table-campaigns-red td{
+	color: #66A5F4;
+	border: 1px solid #EF8F81;
+}
+.table-campaigns-red thead{
+	color: white;
+	background: #EF8F81;
+}
+.table-campaigns-red th {
+	text-align: center;	
+}
+.table-campaigns-red a { 
+	color: #EF8F81;
+}
+.campaign-comment-content {
+	margin: 18px;
+}
+.campaign-comment-content > li{
+	margin-bottom: 10px;
+}
+.comment-timestamp-item li {
+	margin-right: 36px;
+}
+.comments-actions {
+	text-align: center;
+}
+.comments-actions li{
+	margin: 18px; 
 }
