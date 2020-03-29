@@ -19,6 +19,9 @@ footer { color: white; }
 .nomargin-bottom {
 	margin-bottom: 0;
 }
+.page-container {
+	margin-top: 80px;
+}
 .main-nav-container-centered {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -127,6 +130,10 @@ footer { color: white; }
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
+.item-space-around {
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
 footer a {
 	color: white;
 }
@@ -141,6 +148,10 @@ footer a {
 }
 
 /* Campaigns */
+thead th { 
+	font-weight: 400;
+	border-radius: 0;
+}
 .buttons-placeholder {
 	margin-top: 60px;
 	margin-bottom: 36px;
@@ -154,10 +165,17 @@ footer a {
 	color: white;
 	background: #788EDA;
 }
-.table-campaigns thead th { 
-	font-weight: 400;
-	border-radius: 0;
-}
 .table-campaigns a { 
 	color: #788EDA;
+}
+.table-campaigns-green {
+	color: #3FB2A5;
+	border: 1px solid #3FB2A5;
+}
+.table-campaigns-green thead{
+	color: white;
+	background: #3FB2A5;
+}
+.table-campaigns-green a { 
+	color: #3FB2A5;
 }
