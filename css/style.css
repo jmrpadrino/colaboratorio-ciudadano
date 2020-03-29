@@ -100,6 +100,18 @@ footer { color: white; }
 	width: 220px;
 	background: #EF8F81;
 }
+.btn-campaign {
+	font-size: 14px;
+}
+.btn-blue {
+	background: #66A5F4;
+}
+.btn-red {
+	background: #EF8F81;
+}
+.btn-green {
+	background: #3FB2A5;
+}
 .stats-list li {
 	padding: 5px 8px;
 	background: #3FB2A5;
@@ -126,4 +138,26 @@ footer a {
 }
 .footer-social-icons li {
 	margin-right: 20px;
+}
+
+/* Campaigns */
+.buttons-placeholder {
+	margin-top: 60px;
+	margin-bottom: 36px;
+}
+.table-campaigns,
+.table-campaigns td{
+	color: #788EDA;
+	border: 1px solid #788EDA;
+}
+.table-campaigns thead{
+	color: white;
+	background: #788EDA;
+}
+.table-campaigns thead th { 
+	font-weight: 400;
+	border-radius: 0;
+}
+.table-campaigns a { 
+	color: #788EDA;
 }
