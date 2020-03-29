@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<title>Colaboratorio Ciudadano - Buscar Campañas</title>
+
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat&display=swap" rel="stylesheet">
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<!-- https://css2sass.herokuapp.com/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<nav class="navigation" role="navigation">
+			<div class="nav-wrapper">
+
+				<div class="row">
+					<div class="col l2 main-nav-container-centered center"><a id="logo-container" href="#" class="brand-logo"><img src="images/LOGO_colaboratoriociudadano_S.png"></a></div>
+					<div class="col l8 main-nav-container-centered">
+						<ul class="navigation-desktop-list hide-on-med-and-down">
+							<li><a class="active" href="#">Conoce más</a></li>
+							<li><a href="#">Oportunidades para colaborara</a></li>
+							<li><a href="#">Reporta tu necesidad</a></li>
+							<li><a href="#">Informate</a></li>
+						</ul>
+					</div>
+					<div class="col l2 main-nav-container-centered">
+						<ul class="navigation-desktop-list center hide-on-med-and-down">
+							<li><a href="#">Mi cuenta</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<ul id="nav-mobile" class="sidenav">
+					<li><a class="active" href="#">Conoce más</a></li>
+					<li><a href="#">Oportunidades para colaborara</a></li>
+					<li><a href="#">Reporta tu necesidad</a></li>
+					<li><a href="#">Informate</a></li>
+					<li><a href="#">Mi cuenta</a></li>
+				</ul>
+				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+			</div>
+		</nav>
+
+		<section class="page-container search-view">
+			<div class="container">
+				<div class="row">
+					<div class="col l12">
+						<h1 class="section-title uppercase">Resultados de la Búsqueda</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l3">
+						<form action="/">
+							<div class="row filter-header">
+								<div class="col l4"><h3 class="uppercase filter-column-title">Filtros</h3></div>
+								<div class="col l8 right-align">
+									<button type="submit" class="btn btn-rounded btn-blue btn-filter">Aplicar filtro</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l12">
+									<label for="provincia">Provincia</label>
+									<select id="provincia" name="provincia">
+										<option>Seleccione Provincia</option>
+										<option value="1">Pichincha</option>
+										<option value="2">Tunguragua</option>
+										<option value="3">Imbabura</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l12">
+									<label for="provincia">Cantón</label>
+									<select id="provincia" name="provincia">
+										<option>Seleccione Cantón</option>
+										<option value="1">Distrito Metropolitano de Quito</option>
+										<option value="2">Mejía</option>
+										<option value="3">Rumiñahui</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l12">
+									<label for="provincia">Tipo de Campaña</label>
+									<select id="provincia" name="provincia">
+										<option>Seleccionar</option>
+										<option value="1">Todas</option>
+										<option value="2">Donación</option>
+										<option value="3">Voluntario</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col l9">
+						<div class="row">
+							<div class="col l12">
+								<form class="form-inline" action="#">
+									<input id="campaing" type="text" name="s" class="campaign-input">
+									<button id="search_campaigns" class="btn btn-rounded btn-blue">Buscar</button>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col l12">
+								<p>6 resuldatos de la búsqueda.</p>
+							</div>
+						</div>
+						<div class="row list-tools">
+							<div class="col l4">
+								<div class="flex-horizontal-items">
+									<span>Mostrar</span>
+									<select class="show-amount" name="amount">
+										<option value="10">10</option>
+										<option value="20">20</option>
+										<option value="50">50</option>
+									</select>
+									<span>registros</span>
+								</div>
+							</div>
+							<div class="col l7 offset-l1">
+								<div class="flex-horizontal-items">
+									<span>Búsqueda rápida</span>
+									<input type="text" name="fast_search" class="campaign-input fast-search">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col l12">
+								<h3 class="uppercase filter-column-title">Campañas Encontradas</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col l12">
+								<!-- empieza el ciclo -->								
+								<div class="row search-item-list">
+									<div class="col l3 center">
+										<img src="images/componente6-1.svg" class="responsive-img">
+									</div>
+									<div class="col l7">
+										<h4 class="uppercase filter-column-title search-item-title">Título de la campaña</h4>
+										<p class="search-item-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+										<ul>
+											<li><strong>Autor:</strong> Nombre Apellido</li>
+											<li><strong>Ubicación:</strong> Quito, Pichincha.</li>
+											<li><strong>Tipo de Campaña:</strong> Voluntario.</li>
+										</ul>
+									</div>
+									<div class="col l2 center">
+										<a href="#" class="btn btn-rounded btn-green">Ver</a>
+									</div>
+								</div>
+								<!-- termina el ciclo -->	
+								
+								<div class="row search-item-list">
+									<div class="col l3 center">
+										<img src="images/componente6-1.svg" class="responsive-img">
+									</div>
+									<div class="col l7">
+										<h4 class="uppercase filter-column-title search-item-title">Título de la campaña</h4>
+										<p class="search-item-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+										<ul>
+											<li><strong>Autor:</strong> Nombre Apellido</li>
+											<li><strong>Ubicación:</strong> Quito, Pichincha.</li>
+											<li><strong>Tipo de Campaña:</strong> Voluntario.</li>
+										</ul>
+									</div>
+									<div class="col l2 center">
+										<a href="#" class="btn btn-rounded btn-green">Ver</a>
+									</div>
+								</div>
+								<div class="row search-item-list">
+									<div class="col l3 center">
+										<img src="images/componente6-1.svg" class="responsive-img">
+									</div>
+									<div class="col l7">
+										<h4 class="uppercase filter-column-title search-item-title">Título de la campaña</h4>
+										<p class="search-item-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+										<ul>
+											<li><strong>Autor:</strong> Nombre Apellido</li>
+											<li><strong>Ubicación:</strong> Quito, Pichincha.</li>
+											<li><strong>Tipo de Campaña:</strong> Voluntario.</li>
+										</ul>
+									</div>
+									<div class="col l2 center">
+										<a href="#" class="btn btn-rounded btn-green">Ver</a>
+									</div>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bkg-blue">
+			<div class="container">
+				<div class="row nomargin-bottom">
+					<div class="col l3">
+						<ul class="footer-social-icons flex-horizontal-items">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="col l6">
+						<p>Acerca de</p>
+						<img src="#">
+						<img src="#">
+					</div>
+					<div class="col l3">
+						<p>Contacto:</p>
+						<p><a href="mailto:info@colaborativociudadano.org">info@colaborativociudadano.org</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+	</body>
+</html>

@@ -23,8 +23,24 @@ strong { font-weight: bold; }
 .nomargin-bottom {
 	margin-bottom: 0;
 }
+.uppercase {
+	text-transform: uppercase;
+}
+.form-inline {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-line-pack: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
 .page-container {
 	margin-top: 80px;
+	min-height: 600px;
 }
 .main-nav-container-centered {
 	display: -webkit-box;
@@ -229,4 +245,56 @@ thead th {
 }
 .comments-actions li{
 	margin: 18px; 
+}
+
+/* search and filters */
+.search-view,
+.search-view label
+{
+	color: #66A5F4;
+}
+.filter-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+.filter-column-title {
+	font-size: 18px;
+	margin: 0;
+}
+.btn-filter {
+	font-weight: bold;
+}
+select { display: block !important; }
+.campaign-input {
+	border: 1px solid lightgray !important;
+	max-width: 85%;
+	margin: 0 !important;
+	padding: 0 10px !important;
+}
+.show-amount {
+	margin: 0 10px;
+}
+.fast-search  {
+	max-width: 60%;
+}
+.list-tools .flex-horizontal-items {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.search-item-list {
+	margin-bottom: 48px;
+	font-size: 12px;
+}
+.search-item-title {
+	font-weight: 900;
+}
+.search-item-excerpt {
+	margin: 10px 0;
 }
