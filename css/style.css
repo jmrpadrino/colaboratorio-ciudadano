@@ -10,8 +10,33 @@ nav ul a {
 nav .sidenav-trigger {
 	position: absolute;
 	top: 0;
-	color: black;
+    color: black;
+    right: 0;
 }
+
+#nav-mobile {
+    background: #66A5F4;
+    color: white;
+    padding-top: 60px;
+}
+#nav-mobile a {
+    color: white;
+    text-align: center;
+}
+#nav-mobile li {
+    position: relative;
+    margin-bottom: 18px;
+}
+#nav-mobile li:after {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 1px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    left: 42%;
+}
+
 footer { color: white; }
 strong { font-weight: bold; }
 .btn {
@@ -308,4 +333,52 @@ select { display: block !important; }
 }
 .search-item-excerpt {
 	margin: 10px 0;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 768px){
+    /* home */
+    .hero.home {
+        text-align: center;
+    }
+    .hero.home .l9,
+    .interactive-map .l12,
+    .featured-projects .l12{
+        width: 100%;
+    }
+    .hero.home .form-inline {
+        flex-direction: column;
+    }
+    .section-title {
+        font-size: 22px;
+        text-align: center;
+    }
+    .project-content-placeholder {
+        width: 50%;
+        float: left;
+        margin-right: 4%;
+    }
+    .project-content-placeholder{
+    }
+    .project-stats-placeholder {
+        min-height: 200px;
+        overflow: auto;
+        width: 45%;
+    }
+    .project-author{
+        display: none;
+    }
+    .stats-list {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 26px;
+    }
+    .stats-list li {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    .featured-projects .col:nth-child(even){
+        border: none;
+    }
 }
