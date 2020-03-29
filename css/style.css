@@ -20,6 +20,10 @@ strong { font-weight: bold; }
 .bkg-blue {
 	background: #66A5F4;
 }
+.center-img {
+	margin: 0 auto;
+	display: block;
+}
 .nomargin-bottom {
 	margin-bottom: 0;
 }
@@ -37,6 +41,13 @@ strong { font-weight: bold; }
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+.text-input {
+	background: white !important;
+	border: 1px solid lightgray !important;
+	padding: 0 10px !important;
+	max-width: 80%;
+	margin-right: 18px;
 }
 .page-container {
 	margin-top: 80px;
