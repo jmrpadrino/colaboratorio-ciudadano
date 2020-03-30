@@ -212,6 +212,11 @@ strong { font-weight: bold; }
 	-ms-flex-pack: start;
 	justify-content: flex-start;
 }
+.item-flex-end {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
 .display-inline-flex {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -295,6 +300,19 @@ thead th {
 }
 
 /* search and filters */
+.card {
+	padding-top: 36px;
+}
+.card-image img {
+	max-width: 50%;
+	margin: 0 auto;
+	margin-bottom: 36px;
+}
+.actions-icons li {
+	margin-left: 36px;
+}
+
+
 .search-view,
 .search-view label
 {
