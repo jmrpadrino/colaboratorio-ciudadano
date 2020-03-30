@@ -381,4 +381,41 @@ select { display: block !important; }
     .featured-projects .col:nth-child(even){
         border: none;
     }
+    
+    /* search view */
+    .search-view > .container .row .l3,
+    .search-view > .container .row .l9,
+    .search-view > .container .row .l9 .row .l12,
+    .search-view > .container .row .l3 .row .l12,
+    .list-tools .l4{
+        width: 100%;
+    }
+    .filter-header .col {
+        width: 50%;
+    }
+    .search-item-list .l3 {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .search-item-list .l7 {
+        width: 75%;
+        float: left;
+    }
+    .filter-column-title {
+        text-align: center;
+    }
+    h4.filter-column-title {
+        text-align: left;
+    }
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
