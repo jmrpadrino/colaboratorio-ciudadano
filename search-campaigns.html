@@ -53,7 +53,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col l3">
+					<div class="col l3 hide-on-small-only">
 						<form action="/">
 							<div class="row filter-header">
 								<div class="col l4"><h3 class="uppercase filter-column-title">Filtros</h3></div>
@@ -97,7 +97,7 @@
 						</form>
 					</div>
 					<div class="col l9">
-						<div class="row">
+						<div class="row hide-on-small-only">
 							<div class="col l12">
 								<form class="form-inline" action="#">
 									<input id="campaing" type="text" name="s" class="campaign-input">
@@ -155,7 +155,7 @@
 									</div>
 								</div>
 								<!-- termina el ciclo -->	
-								
+
 								<div class="row search-item-list">
 									<div class="col l3 center">
 										<img src="images/componente6-1.svg" class="responsive-img">
@@ -193,6 +193,62 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="fixed-action-btn">
+				<a class="btn-floating btn-large blue modal-trigger" href="#modal1">
+					<i class="large material-icons">more_horiz</i>
+				</a>
+			</div>
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+					<h4 class="modal-title bigger-text">Filtrar búsqueda</h4>
+					<div class="col s12 hide-on-med-and-up">
+						<form action="/">
+							<div class="row filter-header">
+								<div class="col l4"><h3 class="uppercase filter-column-title">Filtros</h3></div>
+								<div class="col l8 right-align">
+									<button type="submit" class="btn btn-rounded btn-blue btn-filter">Aplicar filtro</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l12">
+									<label for="provincia">Provincia</label>
+									<select id="provincia" name="provincia">
+										<option>Seleccione Provincia</option>
+										<option value="1">Pichincha</option>
+										<option value="2">Tunguragua</option>
+										<option value="3">Imbabura</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l12">
+									<label for="provincia">Cantón</label>
+									<select id="provincia" name="provincia">
+										<option>Seleccione Cantón</option>
+										<option value="1">Distrito Metropolitano de Quito</option>
+										<option value="2">Mejía</option>
+										<option value="3">Rumiñahui</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l12">
+									<label for="provincia">Tipo de Campaña</label>
+									<select id="provincia" name="provincia">
+										<option>Seleccionar</option>
+										<option value="1">Todas</option>
+										<option value="2">Donación</option>
+										<option value="3">Voluntario</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
 				</div>
 			</div>
 		</section>
