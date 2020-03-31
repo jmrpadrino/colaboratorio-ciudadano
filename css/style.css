@@ -249,6 +249,9 @@ display: flex;
 footer a {
 	color: white;
 }
+footer h4 {
+	font-size: 20px;
+}
 .footer-social-icons {
 	font-size: 24px;
 	-webkit-box-pack: start;
