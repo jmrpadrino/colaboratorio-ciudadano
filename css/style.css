@@ -36,7 +36,12 @@ nav .sidenav-trigger {
     position: absolute;
     left: 42%;
 }
-
+.dropdown-content{
+	top: 64px!important;
+}
+.dropdown-content a {
+	color: black !important; 
+}
 footer { color: white; }
 strong { font-weight: bold; }
 .btn {
@@ -191,7 +196,7 @@ display: flex;
 }
 .btn-more-projects {
 	width: 220px;
-	background: #EF8F81;
+	background: #66A5F4;
 }
 .btn-campaign {
 	font-size: 14px;

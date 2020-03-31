@@ -15,12 +15,16 @@
 	<body>
 		<div class="navbar-fixed">
 			<nav class="navigation" role="navigation">
+				<ul id="dropdown1" class="dropdown-content">
+					<li><a href="#!">Socios</a></li>
+					<li><a href="#">Acerca de</a></li>
+				</ul>
 				<div class="nav-wrapper">
 					<div class="row">
 						<div class="col l2 main-nav-container-centered center"><a id="logo-container" href="#" class="brand-logo"><img src="images/LOGO_colaboratoriociudadano_S.png"></a></div>
 						<div class="col l8 main-nav-container-centered">
 							<ul class="navigation-desktop-list hide-on-med-and-down">
-								<li><a class="active" href="#">Conoce más</a></li>
+								<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Conoce más <i class="material-icons right">arrow_drop_down</i></a></li>
 								<li><a href="#">Oportunidades para colaborara</a></li>
 								<li><a href="#">Reporta tu necesidad</a></li>
 								<li><a href="#">Informate</a></li>
@@ -50,27 +54,27 @@
 				<div class="container">
 					<div class="row">
 						<!-- 
-						<div class="col l4">
-							<img class="responsive-img hero-max-width-image" src="images/CORONAVIRUS.png">
-						</div>
-						<div class="col l8">
-							<div class="row">
-								<div class="col l9">
-									<h1>¡Únete al Colaboratorio Ciudadano!</h1>
-									<p class="bigger-text">Juntos luchamos codo a codo contra el <strong>Covid-19.</strong></p>
-									<p>Un espacio de apoyo mutuo entre ciudadanos.<br />¡Reporta tu necesidad, colabora con tu vecino o comparte tus ideas!</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col l9">
-									<form class="form-inline" action="/">
-										<input name="s" class="text-input validate" type="text" placeholder="Indica lo que vas a buscar">
-										<button class="btn btn-rounded btn-blue">Buscar</button>
-									</form>
-								</div>
-							</div>
-						</div>
-						-->
+<div class="col l4">
+<img class="responsive-img hero-max-width-image" src="images/CORONAVIRUS.png">
+</div>
+<div class="col l8">
+<div class="row">
+<div class="col l9">
+<h1>¡Únete al Colaboratorio Ciudadano!</h1>
+<p class="bigger-text">Juntos luchamos codo a codo contra el <strong>Covid-19.</strong></p>
+<p>Un espacio de apoyo mutuo entre ciudadanos.<br />¡Reporta tu necesidad, colabora con tu vecino o comparte tus ideas!</p>
+</div>
+</div>
+<div class="row">
+<div class="col l9">
+<form class="form-inline" action="/">
+<input name="s" class="text-input validate" type="text" placeholder="Indica lo que vas a buscar">
+<button class="btn btn-rounded btn-blue">Buscar</button>
+</form>
+</div>
+</div>
+</div>
+-->
 						<div class="col s12">
 							<div class="row">
 								<div class="col s12 l9">
@@ -212,7 +216,7 @@
 				</div>
 				<div class="row feed">
 					<div class="col l12 center">
-						<a class="btn btn-center btn-squared btn-more-projects" href="#">Ver mas Proyectos</a>
+						<a class="btn btn-center btn-rounded btn-more-projects bkg-blue" href="#">Ver mas Proyectos</a>
 					</div>
 				</div>
 			</div>
