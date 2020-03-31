@@ -48,12 +48,12 @@
 		<section class="page-container search-view">
 			<div class="container">
 				<div class="row">
-					<div class="col l12">
+					<div class="col s12 l12">
 						<h1 class="section-title uppercase">Resultados de la Búsqueda</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col l3 hide-on-small-only">
+					<div class="col s12 l3 hide-on-small-only">
 						<form action="/">
 							<div class="row filter-header">
 								<div class="col l4"><h3 class="uppercase filter-column-title">Filtros</h3></div>
@@ -96,7 +96,7 @@
 							</div>
 						</form>
 					</div>
-					<div class="col l9">
+					<div class="col s12 l9">
 						<div class="row hide-on-small-only">
 							<div class="col l12">
 								<form class="form-inline" action="#">
@@ -106,12 +106,12 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col l12">
+							<div class="col s12 l12">
 								<p>6 resuldatos de la búsqueda.</p>
 							</div>
 						</div>
 						<div class="row list-tools">
-							<div class="col l4">
+							<div class="col s12 l4 hide-on-small-only">
 								<div class="flex-horizontal-items">
 									<span>Mostrar</span>
 									<select class="show-amount" name="amount">
@@ -189,21 +189,28 @@
 									<div class="col l2 center">
 										<a href="#" class="btn btn-rounded btn-green">Ver</a>
 									</div>
+								</div>
+								<!-- load more button -->
+								<div class="row">
+									<div class="col s12 center">
+										<a class="btn btn-center btn-rounded bkg-blue btn-loadmore" href="#">Cargar más</a>
+									</div>
 								</div>							
+								<!-- fin load more button -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="fixed-action-btn">
+			<div class="fixed-action-btn hide-on-med-and-up">
 				<a class="btn-floating btn-large blue modal-trigger" href="#modal1">
-					<i class="large material-icons">more_horiz</i>
+					<i class="large material-icons">filter_list</i>
 				</a>
 			</div>
 			<div id="modal1" class="modal">
 				<div class="modal-content">
 					<h4 class="modal-title bigger-text">Filtrar búsqueda</h4>
-					<div class="col s12 hide-on-med-and-up">
+					<div class="col s12">
 						<form action="/">
 							<div class="row filter-header">
 								<div class="col l4"><h3 class="uppercase filter-column-title">Filtros</h3></div>

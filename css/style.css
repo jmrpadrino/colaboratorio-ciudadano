@@ -212,6 +212,10 @@ display: flex;
 .btn-green {
 	background: #3FB2A5;
 }
+.btn-loadmore {
+	max-width: 120px;
+	margin-bottom: 36px;
+}
 .stats-list li {
 	padding: 5px 8px;
 	background: #3FB2A5;
