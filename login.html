@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<title>Colaboratorio Ciudadano</title>
+
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat&display=swap" rel="stylesheet">
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<!-- https://css2sass.herokuapp.com/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="navbar-fixed">
+			<nav class="navigation" role="navigation">
+				<ul id="dropdown1" class="dropdown-content">
+					<li><a href="#!">Socios</a></li>
+					<li><a href="#">Acerca de</a></li>
+				</ul>
+				<div class="nav-wrapper">
+					<div class="row">
+						<div class="col l2 main-nav-container-centered center"><a id="logo-container" href="#" class="brand-logo"><img src="images/LOGO_colaboratoriociudadano_S.png"></a></div>
+						<div class="col l8 main-nav-container-centered">
+							<ul class="navigation-desktop-list hide-on-med-and-down">
+								<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Conoce más <i class="material-icons right">arrow_drop_down</i></a></li>
+								<li><a href="#">Oportunidades para colaborara</a></li>
+								<li><a href="#">Reporta tu necesidad</a></li>
+								<li><a href="#">Informate</a></li>
+							</ul>
+						</div>
+						<div class="col l2 main-nav-container-centered">
+							<ul class="navigation-desktop-list center hide-on-med-and-down">
+								<li><a href="#">Mi cuenta</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul id="nav-mobile" class="sidenav">
+						<li><a class="active" href="#">Conoce más</a></li>
+						<li><a href="#">Oportunidades para colaborara</a></li>
+						<li><a href="#">Reporta tu necesidad</a></li>
+						<li><a href="#">Informate</a></li>
+						<li><a href="#">Mi cuenta</a></li>
+					</ul>
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				</div>
+			</nav>
+		</div>
+
+		<section id="login" class="login-form-placeholder">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<div class="row display-flex login-form-box">
+							<div class="col s12 l6 welcome-message-column nopadding">
+								<div class="mask"></div>
+								<h2 class="center-align">Bienvenidos de nuevo!</h2>
+								<p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat autem cum officiis dolorem quam blanditiis. </p>
+							</div>
+							<div class="col s12 l6 form-placeholer">
+								<h4 class="center-align">Hola!</h4>
+								<p class="center-align">Inicie sesión en su cuenta</p>
+								<form action="/" role="form" class="login-form">
+									<label for="email">Correo Electrónico</label>
+									<input type="email" name="email">
+									<label for="pass">Contraseña</label>
+									<input type="password" name="pass">
+									<label for="remember">
+										<input id="remember" type="checkbox" name="remember">
+										<span>¿Recordárme?</span>
+									</label>
+									<button class="btn btn-rounded btn-green btn-login" type="submit">Entrar</button>
+								</form>
+								<p class="center-align">¿Aún no tiene una cuenta? Créela <a href="#">aqui</a>.</p>
+								<ul class="login-social-icons flex-horizontal-items">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bkg-blue">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 l3">
+						<h4>Colaboratorio Ciudadano</h4>
+						<p>Un espacio de apoyo mutuo entre ciudadanos. ¡Reporta tu necesidad, colabora con tu vecino o comparte tus ideas!</p>
+					</div>
+					<div class="col s12 l6">
+						<p>Acerca de</p>
+						<p>
+							<a href="#"><img src="images/pnud.svg"></a>
+						</p>
+						<p>
+							<a href="#"><img class="center-img" width="80" src="images/logos_fsg.svg"></a>
+						</p>
+					</div>
+					<div class="col s12 l3">
+						<h4>Síganos en nuestra redes sociales</h4>
+						<ul class="footer-social-icons flex-horizontal-items">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+						<h4>Contacto</h4>
+						<a href="mailto:info@colaborativociudadano.org">info@colaborativociudadano.org</a>
+					</div>
+				</div>
+			</div>
+			<div class="row nomargin-bottom" style="background: #222222;">
+				<div class="col s12 center">
+					<p><strong>Colaboratorio Ciudadano</strong> &copy; Todos los derechos reservados 2020</p>
+				</div>
+			</div>
+		</footer>
+
+
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+		<script type="application/javascript">
+			$(document).ready(function(){
+				$('.slider').slider();
+			});
+		</script>
+
+	</body>
+</html>
