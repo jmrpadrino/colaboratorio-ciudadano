@@ -14,6 +14,10 @@ nav .sidenav-trigger {
 	right: 0;
 }
 
+.text-blue {
+	color: #66A5F4;
+}
+
 #nav-mobile {
 	background: #66A5F4;
 	color: white;
@@ -60,6 +64,9 @@ strong { font-weight: bold; }
 }
 .nomargin-bottom {
 	margin-bottom: 0;
+}
+.nopadding {
+	padding: 0!important;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -110,7 +117,8 @@ strong { font-weight: bold; }
 	padding-bottom: 60px;
 	position: relative;
 }
-.hero-mask {
+.hero-mask,
+.mask {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -473,6 +481,103 @@ select { display: block !important; }
 	margin: 10px 0;
 }
 
+/* about us */
+.add-space-on-top {
+	margin-top: 48px;
+}
+.small-pop-text {
+	color: #66A5F4;
+}
+.about-us-brand-title {
+	margin: 0;
+	font-size: 48px;
+}
+.partners-section {
+	margin-top: 48px;
+	background: #ededed;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.profile-name {
+	font-size: 20px;
+}
+.profile-box-shadow {
+	-webkit-box-shadow: 0px 2px 17px black;
+	box-shadow: 0px 10px 22px rgba(186, 186, 186, 0.5);
+	margin-bottom: 36px;
+}
+.idea-proccess {
+	margin-top: 48px;
+}
+.slogan-placeholder {
+	background: dimgray;
+	color: white;
+	text-align: center;
+	font-size: 60px;
+	padding: 100px 0;
+}
+
+/* Login */
+.login-form-placeholder {
+	margin: 50px auto;
+}
+.login-form-box{
+	border-radius: 18px;
+	overflow: auto;
+	-webkit-box-shadow: 0px 10px 20px #d3d3d3;
+	box-shadow: 0px 20px 30px #d3d3d3;
+}
+.welcome-message-column {
+	color: white;
+	background-image: url(../images/home-bkg.jpeg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.welcome-message-column h2,
+.welcome-message-column p {
+	position: relative;
+	z-index: 9;
+}
+
+.form-placeholer {
+	padding: 0 36px !important;
+}
+.display-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.btn-login {
+	margin: 0 auto;
+	margin-top: 48px;
+	display: block;
+	max-width: 120px;
+	font-weight: bold;
+}
+.login-social-icons {
+	max-width: 120px;
+	margin: 36px auto;
+	font-size: 36px;
+}
+
+
 /* media queries */
 
 @media only screen and (max-width: 768px){
@@ -586,6 +691,25 @@ select { display: block !important; }
 	}
 	.campaign-code {
 		font-size: 18px;
+	}
+
+	/* about us */
+	.about-us-brand-title {
+		font-size: 36px;
+	}
+	.slogan-placeholder {
+		font-size: 40px;
+	}
+	
+	/* login */
+	.display-flex {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.welcome-message-column h2 {
+		font-size: 36px;
 	}
 }
 
