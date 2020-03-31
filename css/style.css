@@ -82,8 +82,7 @@ strong { font-weight: bold; }
 	margin-right: 18px;
 }
 .page-container {
-	margin-top: 80px;
-	min-height: 600px;
+	min-height: 700px;
 }
 .main-nav-container-centered {
 	display: -webkit-box;
@@ -98,9 +97,9 @@ strong { font-weight: bold; }
 }
 
 .hero.home {
-	*background: #3FB2A5;
 	background-image: url(../images/home-bkg.jpeg);
 	background-position: center;
+	background-size: cover;
 	color: white;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -196,6 +195,7 @@ display: flex;
 }
 .btn-campaign {
 	font-size: 14px;
+	margin-top: 40px;
 }
 .btn-blue {
 	background: #66A5F4;
@@ -270,6 +270,9 @@ footer h4 {
 thead th { 
 	font-weight: 400;
 	border-radius: 0;
+}
+.pagination li.active {
+	background: #66A5F4;
 }
 .buttons-placeholder {
 	margin-top: 60px;
@@ -360,7 +363,7 @@ thead th {
 .search-view,
 .search-view label
 {
-	color: #66A5F4;
+	color: #222222;
 }
 .filter-header {
 	display: -webkit-box;
@@ -475,6 +478,10 @@ select { display: block !important; }
     .filter-header .col {
         width: 50%;
     }
+	.search-item-list img {
+		max-width: 50%;
+		margin: 0 auto;
+	}
     .search-item-list .l3 {
         width: 100%;
         margin-bottom: 18px;
