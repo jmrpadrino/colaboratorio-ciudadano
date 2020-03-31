@@ -372,6 +372,7 @@ select { display: block !important; }
         text-align: center;
     }
     .hero.home .l9,
+    .hero.home .l4,
     .interactive-map .l12,
     .featured-projects .l12{
         width: 100%;
