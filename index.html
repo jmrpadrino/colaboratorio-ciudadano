@@ -13,58 +13,79 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<nav class="navigation" role="navigation">
-			<div class="nav-wrapper">
-
-				<div class="row">
-					<div class="col l2 main-nav-container-centered center"><a id="logo-container" href="#" class="brand-logo"><img src="images/LOGO_colaboratoriociudadano_S.png"></a></div>
-					<div class="col l8 main-nav-container-centered">
-						<ul class="navigation-desktop-list hide-on-med-and-down">
-							<li><a class="active" href="#">Conoce más</a></li>
-							<li><a href="#">Oportunidades para colaborara</a></li>
-							<li><a href="#">Reporta tu necesidad</a></li>
-							<li><a href="#">Informate</a></li>
-						</ul>
+		<div class="navbar-fixed">
+			<nav class="navigation" role="navigation">
+				<div class="nav-wrapper">
+					<div class="row">
+						<div class="col l2 main-nav-container-centered center"><a id="logo-container" href="#" class="brand-logo"><img src="images/LOGO_colaboratoriociudadano_S.png"></a></div>
+						<div class="col l8 main-nav-container-centered">
+							<ul class="navigation-desktop-list hide-on-med-and-down">
+								<li><a class="active" href="#">Conoce más</a></li>
+								<li><a href="#">Oportunidades para colaborara</a></li>
+								<li><a href="#">Reporta tu necesidad</a></li>
+								<li><a href="#">Informate</a></li>
+							</ul>
+						</div>
+						<div class="col l2 main-nav-container-centered">
+							<ul class="navigation-desktop-list center hide-on-med-and-down">
+								<li><a href="#">Mi cuenta</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="col l2 main-nav-container-centered">
-						<ul class="navigation-desktop-list center hide-on-med-and-down">
-							<li><a href="#">Mi cuenta</a></li>
-						</ul>
-					</div>
+					<ul id="nav-mobile" class="sidenav">
+						<li><a class="active" href="#">Conoce más</a></li>
+						<li><a href="#">Oportunidades para colaborara</a></li>
+						<li><a href="#">Reporta tu necesidad</a></li>
+						<li><a href="#">Informate</a></li>
+						<li><a href="#">Mi cuenta</a></li>
+					</ul>
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				</div>
-
-				<ul id="nav-mobile" class="sidenav">
-					<li><a class="active" href="#">Conoce más</a></li>
-					<li><a href="#">Oportunidades para colaborara</a></li>
-					<li><a href="#">Reporta tu necesidad</a></li>
-					<li><a href="#">Informate</a></li>
-					<li><a href="#">Mi cuenta</a></li>
-				</ul>
-				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-			</div>
-		</nav>
+			</nav>
+		</div>
 
 		<section class="hero home">
+			<div class="hero-mask"></div>
 			<div class="section" id="index-banner">
-				<div class="row">
-					<div class="col l4">
-						<img class="responsive-img hero-max-width-image" src="images/CORONAVIRUS.png">
-					</div>
-					<div class="col l8">
-						<div class="row">
-							<div class="col l9">
-								<h1>¡Únete al Colaboratorio Ciudadano!</h1>
-								<p class="bigger-text">Juntos luchamos codo a codo contra el <strong>Covid-19.</strong></p>
-								<p>Un espacio de apoyo mutuo entre ciudadanos.<br />¡Reporta tu necesidad, colabora con tu vecino o comparte tus ideas!</p>
+				<div class="container">
+					<div class="row">
+						<!-- 
+						<div class="col l4">
+							<img class="responsive-img hero-max-width-image" src="images/CORONAVIRUS.png">
+						</div>
+						<div class="col l8">
+							<div class="row">
+								<div class="col l9">
+									<h1>¡Únete al Colaboratorio Ciudadano!</h1>
+									<p class="bigger-text">Juntos luchamos codo a codo contra el <strong>Covid-19.</strong></p>
+									<p>Un espacio de apoyo mutuo entre ciudadanos.<br />¡Reporta tu necesidad, colabora con tu vecino o comparte tus ideas!</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l9">
+									<form class="form-inline" action="/">
+										<input name="s" class="text-input validate" type="text" placeholder="Indica lo que vas a buscar">
+										<button class="btn btn-rounded btn-blue">Buscar</button>
+									</form>
+								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col l9">
-								<form class="form-inline" action="/">
-									<input name="s" class="text-input validate" type="text" placeholder="Indica lo que vas a buscar">
-									<button class="btn btn-rounded btn-blue">Buscar</button>
-								</form>
+						-->
+						<div class="col s12">
+							<div class="row">
+								<div class="col s12 l9">
+									<h1>¡Únete al Colaboratorio Ciudadano!</h1>
+									<p class="bigger-text">Juntos luchamos codo a codo contra el <strong>Covid-19.</strong></p>
+									<p>Un espacio de apoyo mutuo entre ciudadanos.<br />¡Reporta tu necesidad, colabora con tu vecino o comparte tus ideas!</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 l9">
+									<form class="form-inline" action="/">
+										<input name="s" class="text-input validate" type="text" placeholder="Indica lo que vas a buscar">
+										<button class="btn btn-rounded btn-blue">Buscar</button>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -79,127 +100,113 @@
 						<h2 class="section-title no-margin-tb">Proyectos Destacados</h2>
 					</div>
 				</div>
-				<div class="row feed">
-					<div class="col l4">
-						<div class="project-card">
-							<div class="project-image-placeholder">
-								<img width="120" src="images/componente6-1.svg" class="responsive-img">
+				<div class="row">
+					<!-- inicia el ciclo -->
+					<div class="col s12 m4">
+						<div class="card project-card">
+							<div class="card-image">
+								<img width="200" src="images/componente6-1.svg" class="responsive-img">
 							</div>
-							<div class="project-content-placeholder">
+							<div class="card-content">
 								<h3 class="project-title">Titulo del Proyecto</h3>
-								<span class="project-author">Nombre Nombre Apellido Apellido</span>
-								<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<p class="project-author">Nombre Nombre Apellido Apellido</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, recusandae!</p>
+								<p class="project-location"><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<div class="project-stats-placeholder">
+									<ul class="stats-list flex-horizontal-items">
+										<li>Donaciones: 5</li>
+										<li>Días restantes: 5</li>
+									</ul>
+								</div>
+								<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 							</div>
-							<div class="project-stats-placeholder">
-								<ul class="stats-list flex-horizontal-items">
-									<li>Donaciones: 5</li>
-									<li>Días restantes: 5</li>
-								</ul>
-							</div>
-							<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 						</div>
 					</div>
-					<div class="col l4">
-						<div class="project-card">
-							<div class="project-image-placeholder">
-								<img width="120" src="images/componente7-1.svg" class="responsive-img">
+					<!-- finaliza el ciclo -->
+					<div class="col s12 m4">
+						<div class="card project-card">
+							<div class="card-image">
+								<img width="200" src="images/componente6-1.svg" class="responsive-img">
 							</div>
-							<div class="project-content-placeholder">
+							<div class="card-content">
 								<h3 class="project-title">Titulo del Proyecto</h3>
-								<span class="project-author">Nombre Nombre Apellido Apellido</span>
-								<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<p class="project-author">Nombre Nombre Apellido Apellido</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, recusandae!</p>
+								<p class="project-location"><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<div class="project-stats-placeholder">
+									<ul class="stats-list flex-horizontal-items">
+										<li>Donaciones: 5</li>
+										<li>Días restantes: 5</li>
+									</ul>
+								</div>
+								<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 							</div>
-							<div class="project-stats-placeholder">
-								<ul class="stats-list flex-horizontal-items">
-									<li>Donaciones: 5</li>
-									<li>Días restantes: 5</li>
-								</ul>
-							</div>
-							<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 						</div>
 					</div>
-					<div class="col l4">
-						<div class="project-card">
-							<div class="project-image-placeholder">
-								<img width="120" src="images/componente8-1.svg" class="responsive-img">
+					<div class="col s12 m4">
+						<div class="card project-card">
+							<div class="card-image">
+								<img width="200" src="images/componente6-1.svg" class="responsive-img">
 							</div>
-							<div class="project-content-placeholder">
+							<div class="card-content">
 								<h3 class="project-title">Titulo del Proyecto</h3>
-								<span class="project-author">Nombre Nombre Apellido Apellido</span>
-								<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<p class="project-author">Nombre Nombre Apellido Apellido</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, recusandae!</p>
+								<p class="project-location"><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<div class="project-stats-placeholder">
+									<ul class="stats-list flex-horizontal-items">
+										<li>Donaciones: 5</li>
+										<li>Días restantes: 5</li>
+									</ul>
+								</div>
+								<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 							</div>
-							<div class="project-stats-placeholder">
-								<ul class="stats-list flex-horizontal-items">
-									<li>Donaciones: 5</li>
-									<li>Días restantes: 5</li>
-								</ul>
-							</div>
-							<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 						</div>
 					</div>
 				</div>
-				<div class="row feed">
-					<div class="col l4">
-						<div class="project-card">
-							<div class="project-image-placeholder">
-								<img width="120" src="images/componente6-1.svg" class="responsive-img">
-							</div>
-							<div class="project-content-placeholder">
+				<div class="row">
+					<div class="col s12 m3">
+						<div class="card project-card tiny-card">
+							<div class="card-content">
 								<h3 class="project-title">Titulo del Proyecto</h3>
-								<span class="project-author">Nombre Nombre Apellido Apellido</span>
-								<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<p class="project-author">Nombre Nombre Apellido Apellido</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, recusandae!</p>
+								<p class="project-location"><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 							</div>
-							<div class="project-stats-placeholder">
-								<ul class="stats-list flex-horizontal-items">
-									<li>Donaciones: 5</li>
-									<li>Días restantes: 5</li>
-								</ul>
-							</div>
-							<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 						</div>
 					</div>
-					<div class="col l4">
-						<div class="project-card">
-							<div class="project-image-placeholder">
-								<img width="120" src="images/componente7-1.svg" class="responsive-img">
-							</div>
-							<div class="project-content-placeholder">
+					<div class="col s12 m3">
+						<div class="card project-card tiny-card">
+							<div class="card-content">
 								<h3 class="project-title">Titulo del Proyecto</h3>
-								<span class="project-author">Nombre Nombre Apellido Apellido</span>
-								<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<p class="project-author">Nombre Nombre Apellido Apellido</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, recusandae!</p>
+								<p class="project-location"><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 							</div>
-							<div class="project-stats-placeholder">
-								<ul class="stats-list flex-horizontal-items">
-									<li>Donaciones: 5</li>
-									<li>Días restantes: 5</li>
-								</ul>
-							</div>
-							<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 						</div>
 					</div>
-					<div class="col l4">
-						<div class="project-card">
-							<div class="project-image-placeholder">
-								<img width="120" src="images/componente8-1.svg" class="responsive-img">
-							</div>
-							<div class="project-content-placeholder">
+					<div class="col s12 m3">
+						<div class="card project-card tiny-card">
+							<div class="card-content">
 								<h3 class="project-title">Titulo del Proyecto</h3>
-								<span class="project-author">Nombre Nombre Apellido Apellido</span>
-								<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<p class="project-author">Nombre Nombre Apellido Apellido</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, recusandae!</p>
+								<p class="project-location"><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 							</div>
-							<div class="project-stats-placeholder">
-								<ul class="stats-list flex-horizontal-items">
-									<li>Donaciones: 5</li>
-									<li>Días restantes: 5</li>
-								</ul>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="card project-card tiny-card">
+							<div class="card-content">
+								<h3 class="project-title">Titulo del Proyecto</h3>
+								<p class="project-author">Nombre Nombre Apellido Apellido</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, recusandae!</p>
+								<p class="project-location"><span class="fa fa-map-marker"></span> Quito, Pichincha</p>
+								<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 							</div>
-							<a class="btn btn-center btn-rounded btn-colaborate" href="#">Colabora</a>
 						</div>
 					</div>
 				</div>
@@ -214,6 +221,11 @@
 		<section id="interactive_map" class="interactive-map">
 			<div class="container">
 				<div class="row">
+					<div class="col l12 center">
+						<h2 class="section-title no-margin-tb">Localización de los proyectos</h2>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col l12">
 						<img src="http://placehold.it/1024x768" class="responsive-img">
 					</div>
@@ -221,16 +233,17 @@
 			</div>
 		</section>
 
-		<section id="interactive_map" class="interactive-map">
+		<section id="interactive_map" class="interactive-views">
 			<div class="container">
 				<div class="row">
-					<div class="col l12">
-						<h2 class="section-title">Visualizaciones</h2>
+					<div class="col s12 l4">
+						<h2 class="section-title small-title">Visualizaciones</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit explicabo reiciendis, numquam ducimus quia assumenda et dolores reprehenderit aliquid accusamus impedit. Natus delectus adipisci quisquam iste provident vitae, quia tempore.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero harum, maxime.</p>
+						<a class="btn btn-center btn-rounded btn-colaborate" href="#">Ver más</a>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col l12">
-						<img src="http://placehold.it/1024x400" class="responsive-img">
+					<div class="col s12 l8">
+						<img src="http://placehold.it/600x480" class="responsive-img">
 					</div>
 				</div>
 			</div>

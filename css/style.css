@@ -60,7 +60,7 @@ strong { font-weight: bold; }
 	text-transform: uppercase;
 }
 .bigger-text {
-	font-size: 18px;
+	font-size: 24px;
 }
 .form-inline {
 	display: -webkit-box;
@@ -98,10 +98,27 @@ strong { font-weight: bold; }
 }
 
 .hero.home {
-	background: #3FB2A5;
+	*background: #3FB2A5;
+	background-image: url(../images/home-bkg.jpeg);
+	background-position: center;
 	color: white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	position: relative;
 }
-.hero.home h1 { font-size: 24px;}
+.hero-mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(0, 0, 0, 0.60);
+	z-index: 1;
+}
+.hero.home .section {
+	z-index: 9;
+	position: relative;
+}
+.hero.home h1 { font-size: 36px;}
 .hero-max-width-image {
 	max-width: 90% !important;
 	margin: 0 auto;
@@ -109,17 +126,20 @@ strong { font-weight: bold; }
 	display: block;
 }
 .featured-projects .col {
-	margin-top: 36px;
-	margin-bottom: 36px;
+	margin-top: 18px;
+	margin-bottom: 18px;
 }
+/*
 .featured-projects .col:nth-child(even) {
 	border-left: 1px solid rgba(102, 165, 244, 0.5);
 	border-right: 1px solid rgba(102, 165, 244, 0.5);
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	
+display: flex;
 }
+*/
 .section-title {
 	font-size: 36px;
 	color: #66A5F4;
@@ -130,7 +150,6 @@ strong { font-weight: bold; }
 }
 .project-card {
 	color: #222222;
-	padding: 0 5px;
 }
 .project-card .fa {
 	color: #343434;
@@ -152,6 +171,9 @@ strong { font-weight: bold; }
 	font-weight: bold;
 	color: #66A5F4;
 }
+.small-title {
+	font-size: 20px;
+}
 .btn-center {
 	margin: 0 auto;
 	display: block;
@@ -165,6 +187,8 @@ strong { font-weight: bold; }
 .btn-colaborate {
 	width: 160px;
 	background: #66A5F4;
+	margin-bottom: 18px;
+	margin-top: 18px;
 }
 .btn-more-projects {
 	width: 220px;
@@ -192,8 +216,8 @@ strong { font-weight: bold; }
 	padding: 5px 8px;
 	background: #3FB2A5;
 	color: white;
-	margin: 18px 0;
-	font-size: 14px;
+	margin: 10px 0;
+	font-size: 12px;
 }
 .flex-horizontal-items {
 	display: -webkit-box;
@@ -234,7 +258,11 @@ footer a {
 .footer-social-icons li {
 	margin-right: 20px;
 }
-
+.interactive-views {
+	background: #eaeaea;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
 /* Campaigns */
 thead th { 
 	font-weight: 400;
@@ -302,6 +330,19 @@ thead th {
 /* search and filters */
 .card {
 	padding-top: 36px;
+}
+.card.project-card.tiny-card {
+	
+}
+.card.project-card .project-title {
+	margin-top: 0;
+}
+.card.project-card .card-content {
+	padding-top: 0;
+}
+.project-author,
+.project-location {
+	margin: 10px 0 !important;
 }
 .card-image img {
 	max-width: 50%;
