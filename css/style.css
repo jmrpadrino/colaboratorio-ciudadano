@@ -667,6 +667,29 @@ select { display: block !important; }
 	margin: 0;
 }
 
+/* Single Campaign */
+.single-campaign-title {
+	font-size: 36px;
+	margin-bottom: 0;
+}
+.single-campaign-subtitle { 
+	font-size: 24px;
+}
+.single-stats li {
+	margin-left: 18px;
+}
+.single-campaign-actions {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 36px;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 768px){
